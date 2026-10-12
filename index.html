@@ -1,12 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>B Sl Oun</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For Vangmey ❤️</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background: #0d0f17;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      overflow-x: hidden;
+      color: #ffffff;
+      padding: 20px;
+      position: relative;
+    }
+
+    /* Floating Heart Animations */
+    .heart {
+      position: fixed;
+      font-size: 20px;
+      color: rgba(255, 105, 180, 0.6);
+      animation: floatUp 6s linear infinite;
+      z-index: 0;
+      bottom: -30px;
+    }
+    @keyframes floatUp {
+      0% {
+        transform: translateY(0) scale(0.8) rotate(0deg);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-105vh) scale(1.3) rotate(360deg);
+        opacity: 0;
+      }
+    }
+
+    /* Card Container */
+    .card {
+      position: relative;
+      z-index: 10;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 182, 193, 0.2);
+      border-radius: 24px;
+      padding: 28px;
+      max-width: 380px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 10px 40px rgba(255, 105, 180, 0.15);
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Image Wrapper */
+    .photo-container {
+      position: relative;
+      width: 180px;
+      height: 180px;
+      margin: 0 auto 20px auto;
+      border-radius: 50%;
+      padding: 5px;
+      background: linear-gradient(135deg, #ff758c, #ff7eb3);
+      animation: pulseGlow 3s infinite alternate;
+    }
+
+    @keyframes pulseGlow {
+      0% { box-shadow: 0 0 15px rgba(255, 117, 140, 0.4); }
+      100% { box-shadow: 0 0 30px rgba(255, 117, 140, 0.8); }
+    }
+
+    .photo-container img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    /* Text Styles */
+    h1 {
+      font-size: 24px;
+      color: #ff8fa3;
+      margin-bottom: 12px;
+      font-weight: 600;
+    }
+
+    .message {
+      font-size: 15px;
+      line-height: 1.6;
+      color: #e0e0e0;
+      margin-bottom: 20px;
+      background: rgba(0, 0, 0, 0.2);
+      padding: 16px;
+      border-radius: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .badge-tag {
+      display: inline-block;
+      background: rgba(255, 117, 140, 0.2);
+      color: #ffb3c1;
+      padding: 6px 16px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 500;
+    }
+  </style>
 </head>
 <body>
+
+  <!-- Background Hearts -->
+  <div class="heart" style="left: 10%; animation-delay: 0s;">💖</div>
+  <div class="heart" style="left: 30%; animation-delay: 2s;">💕</div>
+  <div class="heart" style="left: 50%; animation-delay: 4s;">❤️</div>
+  <div class="heart" style="left: 70%; animation-delay: 1s;">✨</div>
+  <div class="heart" style="left: 85%; animation-delay: 3s;">🌸</div>
+
+  <!-- Profile Card -->
+  <div class="card">
+    <div class="photo-container">
+      <img src="f48af3c1225a4a0e89ff2261124709e9_1791027160177edit.jpg" alt="Vangmey">
+    </div>
+
     <h1>For My Girlfriend, Vangmey 💕</h1>
-    <p>This is for you bbe<3 </p>
+
+    <div class="message">
+      "This is for you bbe&lt;3 Thank you for bringing so much happiness into my life every single day."
+    </div>
+
+    <span class="badge-tag">Forever & Always ✨</span>
+  </div>
+
 </body>
 </html>
